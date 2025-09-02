@@ -1,0 +1,30 @@
+# custom Application VM options
+
+# Memory Management
+-Xms1024m                        # Initial heap size (1 GB)
+-Xmx2048m                        # Maximum heap size (2 GB)
+
+# Heap Dump
+-XX:+HeapDumpOnOutOfMemoryError  # Dump heap on OOM
+-XX:HeapDumpPath=heapdump.hprof  # Heap dump file path
+-XX:+ExitOnOutOfMemoryError      # Exit JVM on OOM
+
+# GC
+-XX:+UseG1GC                     # Use G1 garbage collector
+-Xlog:gc*:file=gc.log:time,uptime,level,tags # GC logging (Java 9+)
+
+# Error File
+-XX:ErrorFile=hs_err_pid%p.log   # JVM crash log
+
+# Encoding
+-Dfile.encoding=UTF-8            # File encoding
+
+# Timezone
+-Duser.timezone=UTC              # Set default timezone
+
+# Debugging Hotswap
+-XX:+AllowEnhancedClassRedefinition # Allow enhanced class redefinition
+-XX:HotswapAgent=fatjar             # Hotswap agent jar
+
+# Spring Boot DevTools (optional)
+# -Dspring.devtools.restart.enabled=true

@@ -1,10 +1,10 @@
 package com.example.core.domain.entity;
 
-
 import com.example.core.base.enums.TenantStatus;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -36,6 +36,10 @@ public class Tenant extends AuditableEntity {
 
     @Column(name = "CONTACT_EMAIL")
     private String contactEmail;
+
+    @Column(name = "IS_DELETED")
+    @ColumnDefault("0")
+    private boolean deleted;
 
 }
 
