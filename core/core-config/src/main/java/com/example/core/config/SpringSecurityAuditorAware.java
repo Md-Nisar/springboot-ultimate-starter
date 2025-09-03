@@ -1,4 +1,4 @@
-package com.example.core.domain.config;
+package com.example.core.config;
 
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.lang.NonNull;

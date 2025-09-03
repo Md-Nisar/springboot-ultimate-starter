@@ -21,12 +21,6 @@
         <!-- Internal modules -->
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>core-base</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.example</groupId>
             <artifactId>core-domain</artifactId>
             <version>${project.version}</version>
         </dependency>

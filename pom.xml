@@ -19,30 +19,6 @@
     <name>Spring Boot Ultimate Starter</name>
     <description>Multi-module Spring Boot starter template with core, app, and auth modules.</description>
     <url>http://www.example.com</url>
-    <licenses>
-        <license>
-            <name>Apache License, Version 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <id>1</id>
-            <name>Md Nisar Ahmed</name>
-            <email>iamfullstakdev99@gamil.com</email>
-        </developer>
-    </developers>
-    <scm>
-        <connection>
-            scm:git:git://github.com/iamfullstackdev/springboot-ultimate-starter.git
-        </connection>
-        <developerConnection>
-            scm:git:ssh://
-        </developerConnection>
-        <tag>HEAD</tag>
-        <url/>
-    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,7 +31,7 @@
 
         <!-- Library Versions -->
         <mapstruct.version>1.5.5.Final</mapstruct.version>
-        <springdoc.version>2.8.12</springdoc.version>
+        <springdoc.version>3.0.0-M1</springdoc.version>
 
         <!-- Plugin Versions -->
         <maven.clean.plugin.version>3.5.0</maven.clean.plugin.version>
@@ -87,13 +63,16 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- Application BOM -->
             <!-- MapStruct -->
+            <!-- MapStruct API -->
             <dependency>
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct</artifactId>
                 <version>${mapstruct.version}</version>
             </dependency>
 
+            <!-- MapStruct Processor -->
             <dependency>
                 <groupId>org.mapstruct</groupId>
                 <artifactId>mapstruct-processor</artifactId>
@@ -162,6 +141,7 @@
                     <configuration>
                         <exportDatatables>true</exportDatatables>
                         <activeRecipes>
+                            <!-- <recipe>org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3</recipe> -->
                             <recipe>org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4</recipe>
                         </activeRecipes>
                     </configuration>

@@ -21,12 +21,6 @@
         <!-- Internal modules -->
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>auth-base</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.example</groupId>
             <artifactId>auth-domain</artifactId>
             <version>${project.version}</version>
         </dependency>

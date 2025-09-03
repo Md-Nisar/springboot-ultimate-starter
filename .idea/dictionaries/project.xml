@@ -2,6 +2,7 @@
   <dictionary name="project">
     <words>
       <w>heapdump</w>
+      <w>openrewrite</w>
       <w>springdoc</w>
     </words>
   </dictionary>

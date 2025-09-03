@@ -1,4 +1,4 @@
-package com.example.core.domain.config;
+package com.example.core.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;

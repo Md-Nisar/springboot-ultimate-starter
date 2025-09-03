@@ -31,13 +31,12 @@
             <artifactId>hibernate-envers</artifactId>
         </dependency>
 
-        <!-- Lombok for boilerplate-free entities -->
+        <!-- MapStruct for mapping DTO ↔ entity -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
         </dependency>
 
-        <!-- MapStruct for mapping DTO ↔ entity -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
