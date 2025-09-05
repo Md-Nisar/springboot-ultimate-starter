@@ -30,17 +30,11 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
         <!-- Library Versions -->
+        <rewrite-spring.version>6.13.0</rewrite-spring.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
-        <springdoc.version>3.0.0-M1</springdoc.version>
+        <springdoc.version>2.8.12</springdoc.version>
 
         <!-- Plugin Versions -->
-        <maven.clean.plugin.version>3.5.0</maven.clean.plugin.version>
-        <maven.compiler.plugin.version>3.14.0</maven.compiler.plugin.version>
-        <maven.surefire.plugin.version>3.5.3</maven.surefire.plugin.version>
-        <maven.failsafe.plugin.version>3.5.3</maven.failsafe.plugin.version>
-        <maven.jar.plugin.version>3.4.2</maven.jar.plugin.version>
-        <maven.install.plugin.version>3.1.4</maven.install.plugin.version>
-        <maven.deploy.plugin.version>3.1.4</maven.deploy.plugin.version>
 
     </properties>
 
@@ -93,7 +87,7 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Spring Boot Plugin -->
+                <!-- Spring Boot Maven Plugin to package application into a single, executable JAR file -->
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
@@ -106,34 +100,16 @@
                     </executions>
                 </plugin>
 
-                <!-- Clean up after the build -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-clean-plugin</artifactId>
-                    <version>${maven.clean.plugin.version}</version>
-                </plugin>
-
-                <!-- Compiles Java sources -->
+                <!-- Maven Compiler Plugin for compiling Java Sources -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${maven.compiler.plugin.version}</version>
                     <configuration>
                         <release>${java.version}</release>
                     </configuration>
                 </plugin>
 
-                <!-- Run the JUnit unit tests in an isolated classloader. -->
-
-                <!-- Run the JUnit integration tests in an isolated classloader -->
-
-                <!-- Build a JAR from the current project -->
-
-                <!-- Install the built artifact into the local repository -->
-
-                <!-- Deploy the built artifact to the remote repository -->
-
-                <!-- Migration -->
+                <!-- Open Rewrite Maven Plugin for Spring boot Migration -->
                 <plugin>
                     <groupId>org.openrewrite.maven</groupId>
                     <artifactId>rewrite-maven-plugin</artifactId>
@@ -142,14 +118,14 @@
                         <exportDatatables>true</exportDatatables>
                         <activeRecipes>
                             <!-- <recipe>org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3</recipe> -->
-                            <recipe>org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4</recipe>
+                            <!-- <recipe>org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_4</recipe> -->
                         </activeRecipes>
                     </configuration>
                     <dependencies>
                         <dependency>
                             <groupId>org.openrewrite.recipe</groupId>
                             <artifactId>rewrite-spring</artifactId>
-                            <version>6.13.0</version>
+                            <version>${rewrite-spring.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>

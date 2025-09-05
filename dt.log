@@ -46,9 +46,6 @@
 [INFO] |  +- org.springframework.boot:spring-boot-starter:jar:3.4.9:compile
 [INFO] |  |  +- org.springframework.boot:spring-boot:jar:3.4.9:compile
 [INFO] |  |  |  \- org.springframework:spring-context:jar:6.2.10:compile
-[INFO] |  |  |     +- org.springframework:spring-aop:jar:6.2.10:compile
-[INFO] |  |  |     +- org.springframework:spring-beans:jar:6.2.10:compile
-[INFO] |  |  |     +- org.springframework:spring-expression:jar:6.2.10:compile
 [INFO] |  |  |     \- io.micrometer:micrometer-observation:jar:1.14.10:compile
 [INFO] |  |  |        \- io.micrometer:micrometer-commons:jar:1.14.10:compile
 [INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:3.4.9:compile
@@ -69,10 +66,9 @@
 [INFO] |     +- org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile
 [INFO] |     \- com.fasterxml:classmate:jar:1.7.0:compile
 [INFO] +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO] \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]    +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]    |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]    |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO] \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]    +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]    |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]    |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]    |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]    |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -84,13 +80,12 @@
 [INFO]    |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]    |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]    |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]    |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]    |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]    |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]    |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]    |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]    |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]    +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]    |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]    |     +- org.springframework:spring-aop:jar:6.2.10:compile
+[INFO]    |     +- org.springframework:spring-beans:jar:6.2.10:compile
+[INFO]    |     +- org.springframework:spring-expression:jar:6.2.10:compile
+[INFO]    |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]    +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]    \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]       \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -157,10 +152,9 @@
 [INFO]    |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]    |     \- jakarta.validation:jakarta.validation-api:jar:3.0.2:compile
 [INFO]    +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]    \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]       +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]       |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]       |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO]    \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]       +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]       |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]       |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]       |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]       |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -170,13 +164,9 @@
 [INFO]       |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]       |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]       |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]       |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]       |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]       |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]       |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]       |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]       |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]       +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]       |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]       |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]       +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]       \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]          \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -243,10 +233,9 @@
 [INFO]       |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]       |     \- jakarta.validation:jakarta.validation-api:jar:3.0.2:compile
 [INFO]       +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]       \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]          +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]          |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]          |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO]       \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]          +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]          |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]          |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]          |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]          |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -256,13 +245,9 @@
 [INFO]          |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]          |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]          |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]          |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]          |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]          |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]          |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]          |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]          |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]          +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]          |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]          |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]          +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]          \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]             \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -343,20 +328,15 @@
 [INFO]          |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]          |     \- jakarta.validation:jakarta.validation-api:jar:3.0.2:compile
 [INFO]          +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]          \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]             +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]             |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]             |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
-[INFO]             |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
-[INFO]             |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
-[INFO]             |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
-[INFO]             |  |     +- io.swagger.core.v3:swagger-models-jakarta:jar:2.2.36:compile
-[INFO]             |  |     \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
-[INFO]             |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]             |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]             |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]             |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]             +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]          \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]             +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]             |  \- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
+[INFO]             |     \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
+[INFO]             |        +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO]             |        +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
+[INFO]             |        +- io.swagger.core.v3:swagger-models-jakarta:jar:2.2.36:compile
+[INFO]             |        \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
+[INFO]             +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]             \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]                \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -372,9 +352,6 @@
 [INFO]    |  +- org.springframework.boot:spring-boot-starter:jar:3.4.9:compile
 [INFO]    |  |  +- org.springframework.boot:spring-boot:jar:3.4.9:compile
 [INFO]    |  |  |  \- org.springframework:spring-context:jar:6.2.10:compile
-[INFO]    |  |  |     +- org.springframework:spring-aop:jar:6.2.10:compile
-[INFO]    |  |  |     +- org.springframework:spring-beans:jar:6.2.10:compile
-[INFO]    |  |  |     +- org.springframework:spring-expression:jar:6.2.10:compile
 [INFO]    |  |  |     \- io.micrometer:micrometer-observation:jar:1.14.10:compile
 [INFO]    |  |  |        \- io.micrometer:micrometer-commons:jar:1.14.10:compile
 [INFO]    |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:3.4.9:compile
@@ -395,10 +372,9 @@
 [INFO]    |     +- org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile
 [INFO]    |     \- com.fasterxml:classmate:jar:1.7.0:compile
 [INFO]    +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]    \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]       +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]       |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]       |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO]    \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]       +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]       |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]       |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]       |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]       |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -410,13 +386,12 @@
 [INFO]       |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]       |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]       |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]       |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]       |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]       |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]       |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]       |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]       |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]       +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]       |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]       |     +- org.springframework:spring-aop:jar:6.2.10:compile
+[INFO]       |     +- org.springframework:spring-beans:jar:6.2.10:compile
+[INFO]       |     +- org.springframework:spring-expression:jar:6.2.10:compile
+[INFO]       |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]       +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]       \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]          \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -480,10 +455,10 @@
 [INFO] |  |  \- org.slf4j:slf4j-api:jar:2.0.17:compile
 [INFO] |  \- org.springframework:spring-aspects:jar:6.2.10:compile
 [INFO] |     \- org.aspectj:aspectjweaver:jar:1.9.24:compile
-[INFO] \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]    +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]    |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]    |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO] \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]    +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]    |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
+[INFO]    |  |  +- org.springframework.boot:spring-boot-starter-validation:jar:3.4.9:compile
 [INFO]    |  |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.44:compile
 [INFO]    |  |  |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]    |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
@@ -496,12 +471,8 @@
 [INFO]    |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]    |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]    |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]    |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]    |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]    |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]    |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]    |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]    +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]    |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]    +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]    \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]       \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -524,9 +495,6 @@
 [INFO] |  +- org.springframework.boot:spring-boot-starter:jar:3.4.9:compile
 [INFO] |  |  +- org.springframework.boot:spring-boot:jar:3.4.9:compile
 [INFO] |  |  |  \- org.springframework:spring-context:jar:6.2.10:compile
-[INFO] |  |  |     +- org.springframework:spring-aop:jar:6.2.10:compile
-[INFO] |  |  |     +- org.springframework:spring-beans:jar:6.2.10:compile
-[INFO] |  |  |     +- org.springframework:spring-expression:jar:6.2.10:compile
 [INFO] |  |  |     \- io.micrometer:micrometer-observation:jar:1.14.10:compile
 [INFO] |  |  |        \- io.micrometer:micrometer-commons:jar:1.14.10:compile
 [INFO] |  |  +- org.springframework.boot:spring-boot-autoconfigure:jar:3.4.9:compile
@@ -547,10 +515,9 @@
 [INFO] |     +- org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile
 [INFO] |     \- com.fasterxml:classmate:jar:1.7.0:compile
 [INFO] +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO] \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]    +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]    |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]    |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO] \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]    +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]    |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]    |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]    |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]    |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -562,13 +529,12 @@
 [INFO]    |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]    |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]    |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]    |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]    |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]    |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]    |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]    |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]    |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]    +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]    |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]    |     +- org.springframework:spring-aop:jar:6.2.10:compile
+[INFO]    |     +- org.springframework:spring-beans:jar:6.2.10:compile
+[INFO]    |     +- org.springframework:spring-expression:jar:6.2.10:compile
+[INFO]    |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]    +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]    \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]       \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -635,10 +601,9 @@
 [INFO]    |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]    |     \- jakarta.validation:jakarta.validation-api:jar:3.0.2:compile
 [INFO]    +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]    \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]       +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]       |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]       |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO]    \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]       +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]       |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]       |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]       |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]       |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -648,13 +613,9 @@
 [INFO]       |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]       |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]       |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]       |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]       |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]       |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]       |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]       |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]       |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]       +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]       |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]       |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]       +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]       \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]          \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -721,10 +682,9 @@
 [INFO]       |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]       |     \- jakarta.validation:jakarta.validation-api:jar:3.0.2:compile
 [INFO]       +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]       \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]          +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]          |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]          |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
+[INFO]       \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]          +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]          |  +- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
 [INFO]          |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
 [INFO]          |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
 [INFO]          |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
@@ -734,13 +694,9 @@
 [INFO]          |  |     |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.4.1:compile
 [INFO]          |  |     +- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
 [INFO]          |  |     \- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.4:compile
-[INFO]          |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]          |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]          |  |  +- org.springframework:spring-web:jar:6.2.10:compile
-[INFO]          |  |  +- org.springframework:spring-webmvc:jar:6.2.10:compile
-[INFO]          |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]          |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]          +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]          |  \- org.springframework:spring-webmvc:jar:6.2.10:compile
+[INFO]          |     \- org.springframework:spring-web:jar:6.2.10:compile
+[INFO]          +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]          \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]             \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -821,20 +777,15 @@
 [INFO]          |  \- org.hibernate.validator:hibernate-validator:jar:8.0.3.Final:compile
 [INFO]          |     \- jakarta.validation:jakarta.validation-api:jar:3.0.2:compile
 [INFO]          +- org.projectlombok:lombok:jar:1.18.38:compile
-[INFO]          \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO]             +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO]             |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO]             |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
-[INFO]             |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
-[INFO]             |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
-[INFO]             |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
-[INFO]             |  |     +- io.swagger.core.v3:swagger-models-jakarta:jar:2.2.36:compile
-[INFO]             |  |     \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
-[INFO]             |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO]             |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO]             |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO]             |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO]             +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO]          \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO]             +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO]             |  \- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
+[INFO]             |     \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
+[INFO]             |        +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO]             |        +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
+[INFO]             |        +- io.swagger.core.v3:swagger-models-jakarta:jar:2.2.36:compile
+[INFO]             |        \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
+[INFO]             +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO]             \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO]                \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] 
@@ -951,6 +902,7 @@
 [INFO] |  \- org.xmlunit:xmlunit-core:jar:2.10.3:test
 [INFO] +- com.mysql:mysql-connector-j:jar:9.4.0:runtime
 [INFO] +- org.mapstruct:mapstruct:jar:1.5.5.Final:compile
+[INFO] +- org.mapstruct:mapstruct-processor:jar:1.5.5.Final:provided
 [INFO] +- com.example:core-controller:jar:1.0-SNAPSHOT:compile
 [INFO] |  \- com.example:core-service:jar:1.0-SNAPSHOT:compile
 [INFO] |     \- com.example:core-domain:jar:1.0-SNAPSHOT:compile
@@ -961,20 +913,15 @@
 [INFO] |  |  |  \- org.springframework.security:spring-security-core:jar:6.4.9:compile
 [INFO] |  |  |     \- org.springframework.security:spring-security-crypto:jar:6.4.9:compile
 [INFO] |  |  \- org.springframework.security:spring-security-web:jar:6.4.9:compile
-[INFO] |  \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:3.0.0-M1:compile
-[INFO] |     +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:3.0.0-M1:compile
-[INFO] |     |  +- org.springdoc:springdoc-openapi-starter-common:jar:3.0.0-M1:compile
-[INFO] |     |  |  +- org.springframework.boot:spring-boot-validation:jar:4.0.0-M2:compile
-[INFO] |     |  |  \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
-[INFO] |     |  |     +- org.apache.commons:commons-lang3:jar:3.17.0:compile
-[INFO] |     |  |     +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
-[INFO] |     |  |     +- io.swagger.core.v3:swagger-models-jakarta:jar:2.2.36:compile
-[INFO] |     |  |     \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
-[INFO] |     |  +- org.springframework.boot:spring-boot-webmvc:jar:4.0.0-M2:compile
-[INFO] |     |  |  +- org.springframework.boot:spring-boot-servlet:jar:4.0.0-M2:compile
-[INFO] |     |  |  \- org.springframework.boot:spring-boot-http-converter:jar:4.0.0-M2:runtime
-[INFO] |     |  \- org.springframework.boot:spring-boot-web-server:jar:4.0.0-M2:compile
-[INFO] |     +- org.webjars:swagger-ui:jar:5.27.1:compile
+[INFO] |  \- org.springdoc:springdoc-openapi-starter-webmvc-ui:jar:2.8.12:compile
+[INFO] |     +- org.springdoc:springdoc-openapi-starter-webmvc-api:jar:2.8.12:compile
+[INFO] |     |  \- org.springdoc:springdoc-openapi-starter-common:jar:2.8.12:compile
+[INFO] |     |     \- io.swagger.core.v3:swagger-core-jakarta:jar:2.2.36:compile
+[INFO] |     |        +- org.apache.commons:commons-lang3:jar:3.17.0:compile
+[INFO] |     |        +- io.swagger.core.v3:swagger-annotations-jakarta:jar:2.2.36:compile
+[INFO] |     |        +- io.swagger.core.v3:swagger-models-jakarta:jar:2.2.36:compile
+[INFO] |     |        \- com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.4:compile
+[INFO] |     +- org.webjars:swagger-ui:jar:5.28.0:compile
 [INFO] |     \- org.webjars:webjars-locator-lite:jar:1.0.1:compile
 [INFO] |        \- org.jspecify:jspecify:jar:1.0.0:compile
 [INFO] +- com.example:core-rbac:jar:1.0-SNAPSHOT:compile
@@ -992,25 +939,25 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Spring Boot Ultimate Starter 1.0-SNAPSHOT:
 [INFO] 
-[INFO] Spring Boot Ultimate Starter ....................... SUCCESS [  5.363 s]
-[INFO] core ............................................... SUCCESS [  0.012 s]
-[INFO] core-base .......................................... SUCCESS [  1.812 s]
-[INFO] core-domain ........................................ SUCCESS [  0.601 s]
-[INFO] core-service ....................................... SUCCESS [  0.077 s]
-[INFO] core-controller .................................... SUCCESS [  0.185 s]
-[INFO] core-rbac .......................................... SUCCESS [  0.025 s]
-[INFO] core-config ........................................ SUCCESS [  0.087 s]
-[INFO] auth ............................................... SUCCESS [  0.010 s]
-[INFO] auth-base .......................................... SUCCESS [  0.015 s]
-[INFO] auth-domain ........................................ SUCCESS [  0.031 s]
-[INFO] auth-service ....................................... SUCCESS [  0.036 s]
-[INFO] auth-controller .................................... SUCCESS [  0.049 s]
-[INFO] analytics .......................................... SUCCESS [  0.015 s]
-[INFO] payment ............................................ SUCCESS [  0.019 s]
-[INFO] app ................................................ SUCCESS [  0.515 s]
+[INFO] Spring Boot Ultimate Starter ....................... SUCCESS [  2.327 s]
+[INFO] core ............................................... SUCCESS [  0.020 s]
+[INFO] core-base .......................................... SUCCESS [  1.065 s]
+[INFO] core-domain ........................................ SUCCESS [  0.313 s]
+[INFO] core-service ....................................... SUCCESS [  0.031 s]
+[INFO] core-controller .................................... SUCCESS [  0.068 s]
+[INFO] core-rbac .......................................... SUCCESS [  0.016 s]
+[INFO] core-config ........................................ SUCCESS [  0.063 s]
+[INFO] auth ............................................... SUCCESS [  0.004 s]
+[INFO] auth-base .......................................... SUCCESS [  0.010 s]
+[INFO] auth-domain ........................................ SUCCESS [  0.016 s]
+[INFO] auth-service ....................................... SUCCESS [  0.019 s]
+[INFO] auth-controller .................................... SUCCESS [  0.017 s]
+[INFO] analytics .......................................... SUCCESS [  0.007 s]
+[INFO] payment ............................................ SUCCESS [  0.008 s]
+[INFO] app ................................................ SUCCESS [  0.187 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  11.814 s
-[INFO] Finished at: 2025-09-03T17:02:20+05:30
+[INFO] Total time:  6.113 s
+[INFO] Finished at: 2025-09-06T00:32:44+05:30
 [INFO] ------------------------------------------------------------------------

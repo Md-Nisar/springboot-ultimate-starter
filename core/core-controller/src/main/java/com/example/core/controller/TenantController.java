@@ -6,9 +6,6 @@ import com.example.core.base.vo.TenantData;
 import com.example.core.base.vo.TenantSearchData;
 import com.example.core.service.TenantService;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
@@ -33,14 +30,7 @@ public class TenantController extends BaseController {
     @PostMapping
     @Operation(
             summary = "Create a new tenant",
-            description = "Creates and persists a new tenant record in the system.",
-            responses = {
-                    @ApiResponse(responseCode = "201", description = "Tenant created successfully",
-                            content = @Content(schema = @Schema(implementation = TenantData.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid request payload or validation error"),
-                    @ApiResponse(responseCode = "401", description = "Unauthorized - JWT token is missing or invalid"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden - User does not have necessary permissions")
-            }
+            description = "Creates and persists a new tenant record in the system."
     )
     public ResponseEntity<ControllerResponse<TenantData>> createTenant(@RequestBody TenantData tenantData) {
         TenantData tenant = tenantService.createTenant(tenantData);
@@ -55,15 +45,7 @@ public class TenantController extends BaseController {
     @PutMapping("/{id}")
     @Operation(
             summary = "Update an existing tenant",
-            description = "Updates the details of a specific tenant identified by its unique ID.",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "Tenant updated successfully",
-                            content = @Content(schema = @Schema(implementation = TenantData.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid request payload or validation error"),
-                    @ApiResponse(responseCode = "404", description = "Tenant not found for the given ID"),
-                    @ApiResponse(responseCode = "401", description = "Unauthorized - JWT token is missing or invalid"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden - User does not have necessary permissions")
-            }
+            description = "Updates the details of a specific tenant identified by its unique ID."
     )
     public ResponseEntity<ControllerResponse<TenantData>> updateTenant(@PathVariable Integer id, @RequestBody TenantData tenantData) {
         TenantData tenant = tenantService.updateTenant(id, tenantData);
@@ -73,13 +55,7 @@ public class TenantController extends BaseController {
     @DeleteMapping("/{id}")
     @Operation(
             summary = "Delete a tenant by ID",
-            description = "Permanently deletes a tenant record from the database.",
-            responses = {
-                    @ApiResponse(responseCode = "204", description = "Tenant deleted successfully"),
-                    @ApiResponse(responseCode = "404", description = "Tenant not found for the given ID"),
-                    @ApiResponse(responseCode = "401", description = "Unauthorized - JWT token is missing or invalid"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden - User does not have necessary permissions")
-            }
+            description = "Permanently deletes a tenant record from the database."
     )
     public ResponseEntity<ControllerResponse<Void>> delete(@PathVariable Integer id) {
         tenantService.deleteTenant(id);
@@ -89,13 +65,7 @@ public class TenantController extends BaseController {
     @GetMapping("/{id}")
     @Operation(
             summary = "Retrieve a tenant by ID",
-            description = "Fetches the details of a single tenant using its unique ID.",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "Tenant details fetched successfully",
-                            content = @Content(schema = @Schema(implementation = TenantData.class))),
-                    @ApiResponse(responseCode = "404", description = "Tenant not found for the given ID"),
-                    @ApiResponse(responseCode = "401", description = "Unauthorized - JWT token is missing or invalid")
-            }
+            description = "Fetches the details of a single tenant using its unique ID."
     )
     public ResponseEntity<ControllerResponse<TenantData>> getTenantById(@PathVariable Integer id) {
         Optional<TenantData> tenant = tenantService.getTenantById(id);
@@ -106,11 +76,7 @@ public class TenantController extends BaseController {
     @GetMapping
     @Operation(
             summary = "Get all tenants",
-            description = "Retrieves a list of all tenants registered in the system.",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "List of tenants fetched successfully",
-                            content = @Content(schema = @Schema(implementation = TenantData.class)))
-            }
+            description = "Retrieves a list of all tenants registered in the system."
     )
     public ResponseEntity<ControllerResponse<List<TenantData>>> getAllTenants() {
         List<TenantData> allTenants = tenantService.getAllTenants();
@@ -120,12 +86,7 @@ public class TenantController extends BaseController {
     @PostMapping("/search")
     @Operation(
             summary = "Search for tenants",
-            description = "Performs a search for tenants based on provided filter parameters like name or status.",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "List of tenants matching the search criteria",
-                            content = @Content(schema = @Schema(implementation = TenantData.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid search parameters")
-            }
+            description = "Performs a search for tenants based on provided filter parameters like name or status."
     )
     public ResponseEntity<ControllerResponse<List<TenantData>>> searchTenants(@RequestBody @Valid TenantSearchData searchData) {
         List<TenantData> tenants = tenantService.searchTenants(searchData);

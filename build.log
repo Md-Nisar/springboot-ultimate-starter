@@ -24,7 +24,7 @@
 [INFO]   from pom.xml
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ springboot-ultimate-starter ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ springboot-ultimate-starter ---
 [INFO] 
 [INFO] --- install:3.1.4:install (default-install) @ springboot-ultimate-starter ---
 [INFO] Installing C:\development\projects\springboot-ultimate-starter\pom.xml to C:\Users\nisar.a\.m2\repository\com\example\springboot-ultimate-starter\1.0-SNAPSHOT\springboot-ultimate-starter-1.0-SNAPSHOT.pom
@@ -34,7 +34,7 @@
 [INFO]   from core\pom.xml
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core ---
 [INFO] 
 [INFO] --- install:3.1.4:install (default-install) @ core ---
 [INFO] Installing C:\development\projects\springboot-ultimate-starter\core\pom.xml to C:\Users\nisar.a\.m2\repository\com\example\core\1.0-SNAPSHOT\core-1.0-SNAPSHOT.pom
@@ -44,21 +44,21 @@
 [INFO]   from core\core-base\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core-base ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core-base ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\core\core-base\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ core-base ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-base\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-base\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ core-base ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ core-base ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 7 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ core-base ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-base\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ core-base ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core-base ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ core-base ---
@@ -76,21 +76,21 @@
 [INFO]   from core\core-domain\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core-domain ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core-domain ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\core\core-domain\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ core-domain ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-domain\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-domain\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ core-domain ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ core-domain ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 4 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ core-domain ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-domain\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ core-domain ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core-domain ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ core-domain ---
@@ -108,21 +108,21 @@
 [INFO]   from core\core-service\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core-service ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core-service ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\core\core-service\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ core-service ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-service\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-service\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ core-service ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ core-service ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 2 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ core-service ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-service\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ core-service ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core-service ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ core-service ---
@@ -140,21 +140,21 @@
 [INFO]   from core\core-controller\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core-controller ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core-controller ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\core\core-controller\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ core-controller ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-controller\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-controller\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ core-controller ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ core-controller ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 2 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ core-controller ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-controller\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ core-controller ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core-controller ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ core-controller ---
@@ -172,21 +172,21 @@
 [INFO]   from core\core-rbac\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core-rbac ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core-rbac ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\core\core-rbac\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ core-rbac ---
 [INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ core-rbac ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ core-rbac ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 2 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ core-rbac ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-rbac\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ core-rbac ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core-rbac ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ core-rbac ---
@@ -204,21 +204,21 @@
 [INFO]   from core\core-config\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ core-config ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ core-config ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\core\core-config\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ core-config ---
 [INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ core-config ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ core-config ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 3 source files with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ core-config ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\core\core-config\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ core-config ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ core-config ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ core-config ---
@@ -235,7 +235,7 @@
 [INFO]   from auth\pom.xml
 [INFO] --------------------------------[ pom ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ auth ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ auth ---
 [INFO] 
 [INFO] --- install:3.1.4:install (default-install) @ auth ---
 [INFO] Installing C:\development\projects\springboot-ultimate-starter\auth\pom.xml to C:\Users\nisar.a\.m2\repository\com\example\auth\1.0-SNAPSHOT\auth-1.0-SNAPSHOT.pom
@@ -245,20 +245,20 @@
 [INFO]   from auth\auth-base\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ auth-base ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ auth-base ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\auth\auth-base\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ auth-base ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-base\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-base\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ auth-base ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ auth-base ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ auth-base ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-base\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ auth-base ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ auth-base ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ auth-base ---
@@ -277,20 +277,20 @@
 [INFO]   from auth\auth-domain\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ auth-domain ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ auth-domain ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\auth\auth-domain\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ auth-domain ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-domain\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-domain\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ auth-domain ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ auth-domain ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ auth-domain ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-domain\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ auth-domain ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ auth-domain ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ auth-domain ---
@@ -309,20 +309,20 @@
 [INFO]   from auth\auth-service\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ auth-service ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ auth-service ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\auth\auth-service\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ auth-service ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-service\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-service\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ auth-service ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ auth-service ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ auth-service ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-service\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ auth-service ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ auth-service ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ auth-service ---
@@ -341,20 +341,20 @@
 [INFO]   from auth\auth-controller\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ auth-controller ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ auth-controller ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\auth\auth-controller\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ auth-controller ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-controller\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-controller\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ auth-controller ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ auth-controller ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ auth-controller ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\auth\auth-controller\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ auth-controller ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ auth-controller ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ auth-controller ---
@@ -373,20 +373,20 @@
 [INFO]   from analytics\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ analytics ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ analytics ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\analytics\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ analytics ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\analytics\src\main\resources
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\analytics\src\main\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ analytics ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ analytics ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ analytics ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\analytics\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ analytics ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ analytics ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ analytics ---
@@ -405,21 +405,21 @@
 [INFO]   from payment\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ payment ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ payment ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\payment\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ payment ---
 [INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] Copying 1 resource from src\main\resources to target\classes
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ payment ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ payment ---
 [INFO] Recompiling the module because of changed source code.
 [INFO] Compiling 1 source file with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ payment ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\payment\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ payment ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ payment ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ payment ---
@@ -437,21 +437,21 @@
 [INFO]   from app\pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.5.0:clean (default-clean) @ app ---
+[INFO] --- clean:3.4.1:clean (default-clean) @ app ---
 [INFO] Deleting C:\development\projects\springboot-ultimate-starter\app\target
 [INFO] 
 [INFO] --- resources:3.3.1:resources (default-resources) @ app ---
 [INFO] Copying 1 resource from src\main\resources to target\classes
 [INFO] Copying 0 resource from src\main\resources to target\classes
 [INFO] 
-[INFO] --- compiler:3.14.0:compile (default-compile) @ app ---
+[INFO] --- compiler:3.13.0:compile (default-compile) @ app ---
 [INFO] Recompiling the module because of changed dependency.
 [INFO] Compiling 1 source file with javac [debug parameters release 17] to target\classes
 [INFO] 
 [INFO] --- resources:3.3.1:testResources (default-testResources) @ app ---
 [INFO] skip non existing resourceDirectory C:\development\projects\springboot-ultimate-starter\app\src\test\resources
 [INFO] 
-[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ app ---
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ app ---
 [INFO] No sources to compile
 [INFO] 
 [INFO] --- surefire:3.5.3:test (default-test) @ app ---
@@ -474,25 +474,25 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Spring Boot Ultimate Starter 1.0-SNAPSHOT:
 [INFO] 
-[INFO] Spring Boot Ultimate Starter ....................... SUCCESS [  1.266 s]
-[INFO] core ............................................... SUCCESS [  0.161 s]
-[INFO] core-base .......................................... SUCCESS [ 15.475 s]
-[INFO] core-domain ........................................ SUCCESS [  6.086 s]
-[INFO] core-service ....................................... SUCCESS [  3.649 s]
-[INFO] core-controller .................................... SUCCESS [  4.743 s]
-[INFO] core-rbac .......................................... SUCCESS [  3.531 s]
-[INFO] core-config ........................................ SUCCESS [  2.423 s]
-[INFO] auth ............................................... SUCCESS [  0.025 s]
-[INFO] auth-base .......................................... SUCCESS [  0.536 s]
-[INFO] auth-domain ........................................ SUCCESS [  0.533 s]
-[INFO] auth-service ....................................... SUCCESS [  0.881 s]
-[INFO] auth-controller .................................... SUCCESS [  0.777 s]
-[INFO] analytics .......................................... SUCCESS [  0.523 s]
-[INFO] payment ............................................ SUCCESS [  1.958 s]
-[INFO] app ................................................ SUCCESS [  8.471 s]
+[INFO] Spring Boot Ultimate Starter ....................... SUCCESS [  0.334 s]
+[INFO] core ............................................... SUCCESS [  0.016 s]
+[INFO] core-base .......................................... SUCCESS [  4.937 s]
+[INFO] core-domain ........................................ SUCCESS [  3.076 s]
+[INFO] core-service ....................................... SUCCESS [  2.619 s]
+[INFO] core-controller .................................... SUCCESS [  3.067 s]
+[INFO] core-rbac .......................................... SUCCESS [  2.148 s]
+[INFO] core-config ........................................ SUCCESS [  1.475 s]
+[INFO] auth ............................................... SUCCESS [  0.030 s]
+[INFO] auth-base .......................................... SUCCESS [  0.265 s]
+[INFO] auth-domain ........................................ SUCCESS [  0.324 s]
+[INFO] auth-service ....................................... SUCCESS [  0.267 s]
+[INFO] auth-controller .................................... SUCCESS [  0.318 s]
+[INFO] analytics .......................................... SUCCESS [  0.105 s]
+[INFO] payment ............................................ SUCCESS [  1.569 s]
+[INFO] app ................................................ SUCCESS [  4.803 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  54.585 s
-[INFO] Finished at: 2025-09-03T17:01:35+05:30
+[INFO] Total time:  26.020 s
+[INFO] Finished at: 2025-09-06T00:31:36+05:30
 [INFO] ------------------------------------------------------------------------
